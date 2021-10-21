@@ -1,0 +1,152 @@
+<mat-toolbar id="encabezado">
+
+    <a href="https://www.ucr.ac.cr" class="svg" id="firma-ucr-a" tabindex="2" style="width: 32em">
+        <img src="./assets/img/firma-ucr-c.svg" id="firma-ucr" alt="Logo Universidad de Costa Rica" />
+    </a>
+
+    <mat-toolbar-row class="toolbar">
+        <a mat-menu-item href="https://www.lanacion.com.ar/%22%3ELa Nación">Inicio</a>
+
+        <button mat-button [matMenuTriggerFor]="informacionestudiantes">Informacion Estudiantes</button>
+        <button mat-button [matMenuTriggerFor]="accionsocial">Acción Social</button>
+        <button mat-button [matMenuTriggerFor]="agenda">Agenda</button>
+
+        <mat-menu #accionsocial="matMenu">
+            <button mat-menu-item href="https://www.lanacion.com.ar/%22%3ELa Nación">1</button>
+            <button mat-menu-item href="https://www.lanacion.com.ar/%22%3ELa Nación">2</button>
+        </mat-menu>
+
+        <mat-menu #informacionestudiantes="matMenu">
+            <button mat-menu-item href="https://www.lanacion.com.ar/%22%3ELa Nación">1</button>
+            <button mat-menu-item href="https://www.lanacion.com.ar/%22%3ELa Nación">2</button>
+        </mat-menu>
+
+        <mat-menu #agenda="matMenu">
+            <button mat-menu-item href="https://www.lanacion.com.ar/%22%3ELa Nación">1</button>
+            <button mat-menu-item href="https://www.lanacion.com.ar/%22%3ELa Nación">2</button>
+        </mat-menu>
+
+
+    </mat-toolbar-row>
+
+</mat-toolbar>
+
+<div>
+
+<section class="button-container" id="seccion-info">
+  <img src="./assets/img/seccion-info-image.jpg" class="fit-image" id="seccion-info-image" alt="Logo Universidad de Costa Rica" />
+<nav>
+  <ul>
+    <li><button class="list-button" >Acreditación</button></li>
+    <li><button class="list-button" >Plan de estudios</button></li>
+    <li><button class="list-button" >Avisos</button></li>
+    <li><button class="list-button" >Sedes y recintos</button></li>
+    <li><button class="list-button" >Contacto</button></li>
+  </ul>
+</nav>
+</section>
+
+
+
+
+    <mat-toolbar class="toolbar">
+        <h2>Noticias informatica Empresarial</h2>
+    </mat-toolbar>
+    <div>
+        <mat-carousel timings="250ms ease-in" [autoplay]="true" [interval]="5000" color="accent" maxWidth="auto"
+            [proportion]="25" [slides]="5" [loop]="true" [hideArrows]="false" [hideIndicators]="false"
+            [useKeyboard]="true" [useMouseWheel]="false" orientation="ltr">
+            <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index" [hideOverlay]="false">
+                <div class="container">
+                <mat-card class="example-card">
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    <mat-card-content>
+                      <p>This card indeterminates progress bar.</p>
+                      <p>Mondongo</p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                  </mat-card>
+
+                  <mat-card class="example-card">
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    <mat-card-content>
+                      <p>This card indeterminates progress bar.</p>
+                      <p>Mondongo</p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                  </mat-card>
+
+                  <mat-card class="example-card">
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    <mat-card-content>
+                      <p>This card indeterminates progress bar.</p>
+                      <p>Mondongo</p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+
+            </mat-carousel-slide>
+        </mat-carousel>
+    </div>
+    <mat-toolbar class="toolbar">
+        <h2>Eventos</h2>
+    </mat-toolbar>
+
+    <section style="    display: grid;
+    align-content: center;
+    justify-content: center;
+    background: #004972;">
+      <iframe src="https://calendar.google.com/calendar/embed?src=ctlu99575ucm46mg5oku3lh0is%40group.calendar.google.com&ctz=America%2FCosta_Rica" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </section>
+
+
+<section>
+    <footer id="footer-main">
+      <div class="footer-grid">
+            <section class="footer-1">
+              <img src="./assets/img/ucr-footer-logo.jpg"  alt="Logo Universidad de Costa Rica" />
+            </section>
+    
+           <section class="footer-2">
+              <h2>Secciones</h2>
+                <h3>Becas</h3>
+                <h3>Ematricula</h3>
+                <h3>Mediacion virtual</h3>
+                <h3>Admisión</h3>
+
+                
+            </section>
+    
+           <section class="footer-3">
+             <h4>Services 3</h4>
+               <p>Our Service a</p>
+               <p>Our Service b</p>
+               <p>Our Service c</p>
+               <p>Our Service d</p>
+           </section>
+    
+           <section class="footer-4">
+            <img src="./assets/img/discapacitado.jpg"  alt="Logo Universidad de Costa Rica" />
+            <img src="./assets/img/traductor.jpg"  alt="Logo Universidad de Costa Rica" />
+            <img src="./assets/img/sign-in.jpg"  alt="Logo Universidad de Costa Rica" />
+            
+            
+            </section>
+       </div>
+    
+    </footer>
+  </section>
+  </div>
